@@ -1,0 +1,83 @@
+/*
+Author:: @CatoMinor3
+Version:: 1
+Date:: February 7, 2021
+Changes log:
+- 1.0 
+
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+
+*/
+
+
+/* this code hides all block tags */
+[data-ref^="chld-"],
+[data-ref^="blck-chld-"],
+[data-ref^="blck-"] {
+display:none;
+}
+
+
+[data-refs*='"blck-grey"'] > div:nth-child(1),
+[data-refs*='"blck-chld-grey"'],
+[data-refs*='"chld-grey"'] > .block-children
+{
+    /* color: #383d41; */
+    background-color: #e2e3e5;
+    border: 1px solid #d6d8db; 
+    margin-bottom: 5px;
+}
+
+[data-refs*='"blck-blue"'] > div:nth-child(1),
+[data-refs*='"blck-chld-blue"'],
+[data-refs*='"chld-blue"'] > .block-children
+{
+ 
+  
+ /*	 color: #004085;*/
+    background-color: #cce5ff;
+    /*border-color: #b8daff;*/
+  border: solid 1px #b8daff;
+  /*border-color: #80BDFF;*/
+    margin-bottom: 5px;
+}
+
+[data-refs*='"blck-green"'] > div:nth-child(1),
+[data-refs*='"blck-chld-green"'],
+[data-refs*='"chld-green"'] > .block-children
+{
+ 
+  /*   color: #155724; */
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  
+    margin-bottom: 5px;
+}
+
+
+[data-refs*='"blck-red"'] > div:nth-child(1),
+[data-refs*='"blck-chld-red"'],
+[data-refs*='"chld-red"'] > .block-children
+{
+ 
+  /*   color: #721c24;*/
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  
+    margin-bottom: 5px;
+}
+
+[data-refs*='"blck-yellow"'] > div:nth-child(1),
+[data-refs*='"blck-chld-yellow"'],
+[data-refs*='"chld-yellow"'] > .block-children
+{
+ 
+ /*  color: #856404; */
+    background-color: #fff3cd;
+    
+    border: 1px solid #ffeeba;
+ 
+    margin-bottom: 5px;
+}
