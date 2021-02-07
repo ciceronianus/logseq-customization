@@ -1,0 +1,255 @@
+/*------------ CUSTOM COLORS ------------------*/
+
+/*
+Title: Custom colors for Logseq
+Author:: @CatoMinor3
+Version:: 1
+Date:: February 6, 2021
+Support: 
+- Paypal: https://www.paypal.me/catominor3
+- Patreon: https://www.patreon.com/catominor
+How to use this? Simply write c:COLOR (see supported colors below) and follow it with 
+the highlighted text, bold text or iphasis. 
+*/
+
+/* ---------------- Roam colors -----------------*/
+
+/*Supporter colors:
+https://github.com/mrmrs/colors
+.navy { color: #001F3F; }
+.blue { color: #0074D9; }
+.aqua { color: #7FDBFF; }
+.teal { color: #39CCCC; }
+.olive { color: #3D9970; }
+.green { color: #2ECC40; }
+.lime { color: #01FF70; }
+.yellow { color: #FFDC00; }
+.orange { color: #FF851B; }
+.red { color: #FF4136; }
+.fuchsia { color: #F012BE; }
+.purple { color: #B10DC9; }
+.maroon { color: #85144B; }
+.silver { color: #DDDDDD; }
+.gray { color: #AAAAAA; }
+.black { color: #111111; }
+*/
+.tag[href*="/c-"] {
+    	display:none !important;  
+}
+
+.tag[href*="/c-"] + mark, 
+.tag[href*="/c-"] + .page-reference > .page-ref {
+    color: white !important;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.tag[href*="/c-navy"] + mark,
+.tag[href*="/c-navy"] + .page-reference > .page-ref {
+	background-color: #001F3F !important;
+}
+
+.tag[href*="/c-navy"] + i, 
+.tag[href*="/c-navy"] + b 
+{color: #001F3F; }
+
+.tag[href*="/c-blue"] + mark,
+.tag[href*="/c-blue"] + .page-reference > .page-ref {
+	background-color: #0074D9 !important;
+}
+
+
+.tag[href*="/c-blue"] + i, 
+.tag[href*="/c-blue"] + b {
+    color: #0074D9;
+    
+}
+
+.tag[href*="/c-aqua"] + mark,
+.tag[href*="/c-aqua"] + .page-reference > .page-ref {
+	background-color: #7FDBFF !important;
+}
+
+.tag[href*="/c-aqua"] + i, 
+.tag[href*="/c-aqua"] + b {
+    color: #7FDBFF;
+    
+}
+
+.tag[href*="/c-teal"] + mark,
+.tag[href*="/c-teal"] + .page-reference > .page-ref {
+	background-color: #39CCCC !important;
+}
+
+
+.tag[href*="/c-teal"] + i,
+.tag[href*="/c-teal"] + b {
+    color: #39CCCC;
+    
+}
+
+
+.tag[href*="/c-olive"] + mark,
+.tag[href*="/c-olive"] + .page-reference > .page-ref {
+	background-color: #3D9970 !important;
+}
+
+.tag[href*="/c-olive"] + i,
+.tag[href*="/c-olive"] + b {
+    color: #3D9970;
+    
+}
+
+.tag[href*="/c-green"] + mark,
+.tag[href*="/c-green"] + .page-reference > .page-ref {
+	background-color: #2ECC40 !important;
+}
+
+.tag[href*="/c-green"] + i,
+.tag[href*="/c-green"] + b {
+    color: #2ECC40;
+    
+}
+
+
+.tag[href*="/c-lime"] + mark,
+.tag[href*="/c-lime"] + .page-reference > .page-ref {
+
+	background-color: #01FF70 !important;
+
+}
+
+.tag[href*="/c-lime"] + i,
+.tag[href*="/c-lime"] + b {
+    color: #01FF70;
+    
+}
+
+.tag[href*="/c-yellow"] + mark,
+.tag[href*="/c-yellow"] + .page-reference > .page-ref {
+
+	background-color: #FFDC00 !important;
+
+}
+
+.tag[href*="/c-yellow"] + i,
+.tag[href*="/c-yellow"] + b {
+    color: #FFDC00;
+    
+}
+
+.tag[href*="/c-orange"] + mark,
+.tag[href*="/c-orange"] + .page-reference > .page-ref {
+
+	background-color: #FF851B !important;
+
+}
+
+.tag[href*="/c-orange"] + i,
+.tag[href*="/c-orange"] + b {
+    color: #FF851B;
+    
+}
+
+
+.tag[href*="/c-red"] + mark,
+.tag[href*="/c-red"] + .page-reference > .page-ref {
+
+	background-color: #FF4136 !important;
+
+}
+
+.tag[href*="/c-red"] + i,
+.tag[href*="/c-red"] + b
+{
+    color: #FF4136;
+    
+}
+
+ 
+
+
+
+
+
+
+
+.tag[href*="/c-fuchsia"] + mark,
+.tag[href*="/c-fuchsia"] + .page-reference > .page-ref {
+
+	background-color: #F012BE !important;
+
+}
+
+.tag[href*="/c-fuchsia"] + i, 
+.tag[href*="/c-fuchsia"] + b {
+    color: #F012BE;
+    
+}
+
+.tag[href*="/c-purple"] + mark,
+.tag[href*="/c-purple"] + .page-reference > .page-ref {
+
+	background-color: #B10DC9 !important;
+
+}
+
+.tag[href*="/c-purple"] + i,
+.tag[href*="/c-purple"] + b {
+    
+    color: #B10DC9;
+}
+
+.tag[href*="/c-maroon"] + mark,
+.tag[href*="/c-maroon"] + .page-reference > .page-ref {
+
+	background-color: #85144B !important;
+
+}
+
+.tag[href*="/c-maroon"] + i,
+.tag[href*="/c-maroon"] + b {
+    color: #85144B;
+    
+}
+
+.tag[href*="/c-silver"] + mark,
+.tag[href*="/c-silver"] + .page-reference > .page-ref {
+
+	background-color: #DDDDDD !important;
+
+}
+
+.tag[href*="/c-silver"] + i,
+.tag[href*="/c-silver"] + b {
+    color: #DDDDDD;
+    
+}
+
+.tag[href*="/c-gray"] + mark,
+.tag[href*="/c-gray"] + .page-reference > .page-ref {
+
+	background-color: #AAAAAA !important;
+
+}
+
+.tag[href*="/c-gray"] + i,
+.tag[href*="/c-gray"] + b {
+    color: #AAAAAA;
+    
+}
+
+.tag[href*="/c-black"] + mark,
+.tag[href*="/c-black"] + .page-reference > .page-ref {
+
+	background-color: #111111 !important;
+
+}
+
+.tag[href*="/c-black"] + i,
+.tag[href*="/c-black"] + b {
+    color: #111111;
+    
+}	
