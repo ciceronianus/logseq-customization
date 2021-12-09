@@ -3,13 +3,14 @@
 /*
 Title: Custom colors for Logseq
 Author:: @CatoMinor3
-Version:: 1
-Date:: February 6, 2021
+Version:: 2 
+- Because of the change in LogSeq's code, I have switched from using #c-COLOR to [[c-COLOR]]
+Date:: December 9, 2021
 Support: 
 - Paypal: https://www.paypal.me/catominor3
 - Patreon: https://www.patreon.com/catominor
-How to use this? Simply write c:COLOR (see supported colors below) and follow it with 
-the highlighted text, bold text or iphasis. 
+How to use this? Simply write [[c-COLOR]] (see supported colors below), insert a space and follow it with 
+the highlighted text, bold text or iphasis, like [[c-red]] ==red highlight==
 */
 
 /* ---------------- Roam colors -----------------*/
@@ -33,12 +34,13 @@ https://github.com/mrmrs/colors
 .gray { color: #AAAAAA; }
 .black { color: #111111; }
 */
-.tag[href*="/c-"] {
+
+.page-reference[data-ref*="c-"] {
     	display:none !important;  
 }
 
-.tag[href*="/c-"] + mark, 
-.tag[href*="/c-"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-"] + mark, 
+.page-reference[data-ref*="c-"] + .page-reference > .page-ref {
     color: white !important;
 	border-radius: 5px;
 	padding-left: 5px;
@@ -46,123 +48,123 @@ https://github.com/mrmrs/colors
 	font-weight: bold;
 }
 
-.tag[href*="/c-navy"] + mark,
-.tag[href*="/c-navy"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-navy"] + mark,
+.page-reference[data-ref*="c-navy"] + .page-reference > .page-ref {
 	background-color: #001F3F !important;
 }
 
-.tag[href*="/c-navy"] + i, 
-.tag[href*="/c-navy"] + b 
+.page-reference[data-ref*="c-navy"] + i, 
+.page-reference[data-ref*="c-navy"] + b 
 {color: #001F3F; }
 
-.tag[href*="/c-blue"] + mark,
-.tag[href*="/c-blue"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-blue"] + mark,
+.page-reference[data-ref*="c-blue"] + .page-reference > .page-ref {
 	background-color: #0074D9 !important;
 }
 
 
-.tag[href*="/c-blue"] + i, 
-.tag[href*="/c-blue"] + b {
+.page-reference[data-ref*="c-blue"] + i, 
+.page-reference[data-ref*="c-blue"] + b {
     color: #0074D9;
     
 }
 
-.tag[href*="/c-aqua"] + mark,
-.tag[href*="/c-aqua"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-aqua"] + mark,
+.page-reference[data-ref*="c-aqua"] + .page-reference > .page-ref {
 	background-color: #7FDBFF !important;
 }
 
-.tag[href*="/c-aqua"] + i, 
-.tag[href*="/c-aqua"] + b {
+.page-reference[data-ref*="c-aqua"] + i, 
+.page-reference[data-ref*="c-aqua"] + b {
     color: #7FDBFF;
     
 }
 
-.tag[href*="/c-teal"] + mark,
-.tag[href*="/c-teal"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-teal"] + mark,
+.page-reference[data-ref*="c-teal"] + .page-reference > .page-ref {
 	background-color: #39CCCC !important;
 }
 
 
-.tag[href*="/c-teal"] + i,
-.tag[href*="/c-teal"] + b {
+.page-reference[data-ref*="c-teal"] + i,
+.page-reference[data-ref*="c-teal"] + b {
     color: #39CCCC;
     
 }
 
 
-.tag[href*="/c-olive"] + mark,
-.tag[href*="/c-olive"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-olive"] + mark,
+.page-reference[data-ref*="c-olive"] + .page-reference > .page-ref {
 	background-color: #3D9970 !important;
 }
 
-.tag[href*="/c-olive"] + i,
-.tag[href*="/c-olive"] + b {
+.page-reference[data-ref*="c-olive"] + i,
+.page-reference[data-ref*="c-olive"] + b {
     color: #3D9970;
     
 }
 
-.tag[href*="/c-green"] + mark,
-.tag[href*="/c-green"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-green"] + mark,
+.page-reference[data-ref*="c-green"] + .page-reference > .page-ref {
 	background-color: #2ECC40 !important;
 }
 
-.tag[href*="/c-green"] + i,
-.tag[href*="/c-green"] + b {
+.page-reference[data-ref*="c-green"] + i,
+.page-reference[data-ref*="c-green"] + b {
     color: #2ECC40;
     
 }
 
 
-.tag[href*="/c-lime"] + mark,
-.tag[href*="/c-lime"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-lime"] + mark,
+.page-reference[data-ref*="c-lime"] + .page-reference > .page-ref {
 
 	background-color: #01FF70 !important;
 
 }
 
-.tag[href*="/c-lime"] + i,
-.tag[href*="/c-lime"] + b {
+.page-reference[data-ref*="c-lime"] + i,
+.page-reference[data-ref*="c-lime"] + b {
     color: #01FF70;
     
 }
 
-.tag[href*="/c-yellow"] + mark,
-.tag[href*="/c-yellow"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-yellow"] + mark,
+.page-reference[data-ref*="c-yellow"] + .page-reference > .page-ref {
 
 	background-color: #FFDC00 !important;
 
 }
 
-.tag[href*="/c-yellow"] + i,
-.tag[href*="/c-yellow"] + b {
+.page-reference[data-ref*="c-yellow"] + i,
+.page-reference[data-ref*="c-yellow"] + b {
     color: #FFDC00;
     
 }
 
-.tag[href*="/c-orange"] + mark,
-.tag[href*="/c-orange"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-orange"] + mark,
+.page-reference[data-ref*="c-orange"] + .page-reference > .page-ref {
 
 	background-color: #FF851B !important;
 
 }
 
-.tag[href*="/c-orange"] + i,
-.tag[href*="/c-orange"] + b {
+.page-reference[data-ref*="c-orange"] + i,
+.page-reference[data-ref*="c-orange"] + b {
     color: #FF851B;
     
 }
 
 
-.tag[href*="/c-red"] + mark,
-.tag[href*="/c-red"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-red"] + mark,
+.page-reference[data-ref*="c-red"] + .page-reference > .page-ref {
 
 	background-color: #FF4136 !important;
 
 }
 
-.tag[href*="/c-red"] + i,
-.tag[href*="/c-red"] + b
+.page-reference[data-ref*="c-red"] + i,
+.page-reference[data-ref*="c-red"] + b
 {
     color: #FF4136;
     
@@ -170,86 +172,80 @@ https://github.com/mrmrs/colors
 
  
 
-
-
-
-
-
-
-.tag[href*="/c-fuchsia"] + mark,
-.tag[href*="/c-fuchsia"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-fuchsia"] + mark,
+.page-reference[data-ref*="c-fuchsia"] + .page-reference > .page-ref {
 
 	background-color: #F012BE !important;
 
 }
 
-.tag[href*="/c-fuchsia"] + i, 
-.tag[href*="/c-fuchsia"] + b {
+.page-reference[data-ref*="c-fuchsia"] + i, 
+.page-reference[data-ref*="c-fuchsia"] + b {
     color: #F012BE;
     
 }
 
-.tag[href*="/c-purple"] + mark,
-.tag[href*="/c-purple"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-purple"] + mark,
+.page-reference[data-ref*="c-purple"] + .page-reference > .page-ref {
 
 	background-color: #B10DC9 !important;
 
 }
 
-.tag[href*="/c-purple"] + i,
-.tag[href*="/c-purple"] + b {
+.page-reference[data-ref*="c-purple"] + i,
+.page-reference[data-ref*="c-purple"] + b {
     
     color: #B10DC9;
 }
 
-.tag[href*="/c-maroon"] + mark,
-.tag[href*="/c-maroon"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-maroon"] + mark,
+.page-reference[data-ref*="c-maroon"] + .page-reference > .page-ref {
 
 	background-color: #85144B !important;
 
 }
 
-.tag[href*="/c-maroon"] + i,
-.tag[href*="/c-maroon"] + b {
+.page-reference[data-ref*="c-maroon"] + i,
+.page-reference[data-ref*="c-maroon"] + b {
     color: #85144B;
     
 }
 
-.tag[href*="/c-silver"] + mark,
-.tag[href*="/c-silver"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-silver"] + mark,
+.page-reference[data-ref*="c-silver"] + .page-reference > .page-ref {
 
 	background-color: #DDDDDD !important;
 
 }
 
-.tag[href*="/c-silver"] + i,
-.tag[href*="/c-silver"] + b {
+.page-reference[data-ref*="c-silver"] + i,
+.page-reference[data-ref*="c-silver"] + b {
     color: #DDDDDD;
     
 }
 
-.tag[href*="/c-gray"] + mark,
-.tag[href*="/c-gray"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-gray"] + mark,
+.page-reference[data-ref*="c-gray"] + .page-reference > .page-ref {
 
 	background-color: #AAAAAA !important;
 
 }
 
-.tag[href*="/c-gray"] + i,
-.tag[href*="/c-gray"] + b {
+.page-reference[data-ref*="c-gray"] + i,
+.page-reference[data-ref*="c-gray"] + b {
     color: #AAAAAA;
     
 }
 
-.tag[href*="/c-black"] + mark,
-.tag[href*="/c-black"] + .page-reference > .page-ref {
+.page-reference[data-ref*="c-black"] + mark,
+.page-reference[data-ref*="c-black"] + .page-reference > .page-ref {
 
 	background-color: #111111 !important;
 
 }
 
-.tag[href*="/c-black"] + i,
-.tag[href*="/c-black"] + b {
+.page-reference[data-ref*="c-black"] + i,
+.page-reference[data-ref*="c-black"] + b {
     color: #111111;
     
 }	
